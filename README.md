@@ -10,15 +10,11 @@ tersebut
 #### a. Dengan membuat objek dari class: tract_123 = Transaction() 
 ### 2. Kemudian, Customer memasukkan nama item, jumlah item, dan harga barang
 #### a. Masukkan item yang ingin dibeli add item([<nana iten>, <jumlah iten>, <harga per item>])) 
-### 3. Jika ternyata ada kesalahan dalam memasukkan nama item atau jumlah item atau
-harga item tetapi tidak ingin menghapus itemnya, Customer bisa melakukan 
+### 3. Jika ternyata ada kesalahan dalam memasukkan nama item atau jumlah item atau harga item tetapi tidak ingin menghapus itemnya, Customer bisa melakukan 
 #### a. Update nama item dengan method update_item_name (<nana iten>, <update nama item>)
 #### b. Update jumlah item dengan method update_item_qty (<nana_item>, <update jumlah item>}
-#### c. Update harga item menggunakan method
-update item price (<nana_item>, <update harga item> 
-### 4. Jika batal membeli item belanjaan, 
-Customer bisa melakukan a Menghapus salah satu item dari nama item dengan method
-delete_item(<nama item>
+#### c. Update harga item menggunakan method update item price (<nana_item>, <update harga item> 
+### 4. Jika batal membeli item belanjaan, Customer bisa melakukan a Menghapus salah satu item dari nama item dengan method delete_item(<nama item>
 ## Penjelasan Flowchart
 ## Penjelasan Fungsi
 ## Test Case
