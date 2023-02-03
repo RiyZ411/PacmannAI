@@ -7,7 +7,7 @@ Akhirnya Andi meminta tolong kepada teman teman selaku programmer Python untuk
 membuatkan program yang menyelesaikan problem tersebut
 Jika ada yang berbelanja, begini journey Customer dalam membantu orang yang
 tersebut
-###1.: Customer membuat ID transaksi customer berikut
+###1-: Customer membuat ID transaksi customer berikut
 a Dengan membuat objek dari class: tract_123 = Transaction() 
 ###2. Kemudian, Customer memasukkan nama item, jumlah item, dan harga barang
 a Masukkan item yang ingin dibeli
