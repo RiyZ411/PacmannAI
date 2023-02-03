@@ -8,9 +8,9 @@ membuatkan program yang menyelesaikan problem tersebut
 Jika ada yang berbelanja, begini journey Customer dalam membantu orang yang
 tersebut
 ### 1. Customer membuat ID transaksi customer berikut
-#### a.Dengan membuat objek dari class: tract_123 = Transaction() 
+#### a. Dengan membuat objek dari class: tract_123 = Transaction() 
 ### 2. Kemudian, Customer memasukkan nama item, jumlah item, dan harga barang
-#### a.Masukkan item yang ingin dibeli
+#### a. Masukkan item yang ingin dibeli
 add item([<nana iten>, <jumlah iten>, <harga per item>])) 
 ### 3. Jika ternyata ada kesalahan dalam memasukkan nama item atau jumlah item atau
 harga item tetapi tidak ingin menghapus itemnya, Customer bisa melakukan 
