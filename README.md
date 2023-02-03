@@ -1,2 +1,2 @@
-# Pacmannn
-Repository untuk project Pacmann
+# Project Python Pacmannn
+
