@@ -19,6 +19,6 @@ tersebut
 ## Penjelasan Fungsi
 ## Test Case
 ## Conclusion
-![ssss]([C:/Users/asus/Desktop/Data Science/Magang/mae.jpg))
+![My Image](C:/Users/asus/Desktop/Data Science/Magang/mae.jpg)
 
 
