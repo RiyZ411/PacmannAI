@@ -19,6 +19,6 @@ tersebut
 ## Penjelasan Fungsi
 ## Test Case
 ## Conclusion
-![ssss]([http://url/to/img.png](https://github.com/RiyZ411/Pacmannn/blob/main/48b125df-5b78-4102-b3b8-c691291c0267.jpg))
+![ssss]([C:\Users\asus\Desktop\Data Science\Magang\mae.jpg))
 
 
