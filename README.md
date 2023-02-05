@@ -19,7 +19,7 @@ tersebut
 ## Penjelasan Fungsi
 ## Test Case
 ## Conclusion
-![Alt text](https://github.com/RiyZ411/Pacmannn/blob/main/48b125df-5b78-4102-b3b8-c691291c0267.jpg)
+![Alt text](https://docs.google.com/document/d/1TyWrKr4xPFJu3IFwt4vUW5gLXgbNRcQjSYkpGVc376I/preview#heading=h.xni05nwx4sb6)
 
 
 
