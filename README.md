@@ -308,11 +308,15 @@ Andi adalah seorang pemilik supermarket besar di salah satu kota di Indonesia. A
 5. Jalankan program
 ## Test Case
 - Test 1
-  ![Flowchart](https://github.com/RiyZ411/Pacmannn/blob/main/Gambar/pilih.png)
-  ![Flowchart]()
+
+![pilih](https://github.com/RiyZ411/Pacmannn/blob/main/Gambar/pilih.png)
+![pilih1](https://github.com/RiyZ411/Pacmannn/blob/main/Gambar/pilih%201.png)
 - Test 2
+![pilih](https://github.com/RiyZ411/Pacmannn/blob/main/Gambar/pilih.png)
 - Test 3
+![pilih](https://github.com/RiyZ411/Pacmannn/blob/main/Gambar/pilih.png)
 - Test 4
+![pilih](https://github.com/RiyZ411/Pacmannn/blob/main/Gambar/pilih.png)
 ## Conclusion
 
 
