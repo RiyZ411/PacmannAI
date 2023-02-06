@@ -307,6 +307,12 @@ Andi adalah seorang pemilik supermarket besar di salah satu kota di Indonesia. A
 4. Import module transaction ke dalam file main.py
 5. Jalankan program
 ## Test Case
+- Test 1
+  ![Flowchart]()
+  ![Flowchart]()
+- Test 2
+- Test 3
+- Test 4
 ## Conclusion
 
 
