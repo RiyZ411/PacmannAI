@@ -312,12 +312,16 @@ Andi adalah seorang pemilik supermarket besar di salah satu kota di Indonesia. A
 ![pilih](https://github.com/RiyZ411/Pacmannn/blob/main/Gambar/pilih.png)
 ![pilih1](https://github.com/RiyZ411/Pacmannn/blob/main/Gambar/pilih%201.png)
 - Test 2
-![pilih](https://github.com/RiyZ411/Pacmannn/blob/main/Gambar/pilih.png)
+
+![pilih](https://github.com/RiyZ411/Pacmannn/blob/main/Gambar/pilih%203.png)
 - Test 3
-![pilih](https://github.com/RiyZ411/Pacmannn/blob/main/Gambar/pilih.png)
+
+![pilih](https://github.com/RiyZ411/Pacmannn/blob/main/Gambar/pilih%205.png)
 - Test 4
-![pilih](https://github.com/RiyZ411/Pacmannn/blob/main/Gambar/pilih.png)
+
+![pilih](https://github.com/RiyZ411/Pacmannn/blob/main/Gambar/pilih%203.2.png)
 ## Conclusion
+  Dengan menggunakan code python ini. Pelanggan tidak perlu melakukan coding atau membuat sebuah object. Pelanggan hanya perlu memasukan angka yang mewakili setiap perintah di pilihan menu. Pada pilihan 6 terdapat batal, yaitu akan mengentikan proses running dari code python. Sehingga Pelanggan bisa membatalkan proses belanja jika merasa tidak jadi untuk belanja.
 
 
 
