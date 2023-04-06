@@ -25,47 +25,47 @@ table
 table = pd.read_sql_query("SELECT * FROM olist_order_customer_dataset;", sqliteConnection)
 table
 ```
-
+![table](https://github.com/RiyZ411/Pacmannn/blob/main/Wrangling%20dan%20SQL/Project/Pictures/2.png)
 ``` python
 table = pd.read_sql_query("SELECT * FROM olist_order_dataset;", sqliteConnection)
 table
 ```
-
+![table](https://github.com/RiyZ411/Pacmannn/blob/main/Wrangling%20dan%20SQL/Project/Pictures/3.png)
 ``` python
 table = pd.read_sql_query("SELECT * FROM olist_order_reviews_dataset;", sqliteConnection)
 table
 ```
-
+![table](https://github.com/RiyZ411/Pacmannn/blob/main/Wrangling%20dan%20SQL/Project/Pictures/4.png)
 ``` python
 table = pd.read_sql_query("SELECT * FROM olist_order_payments_dataset;", sqliteConnection)
 table
 ```
-
+![table](https://github.com/RiyZ411/Pacmannn/blob/main/Wrangling%20dan%20SQL/Project/Pictures/5.png)
 ``` python
 table = pd.read_sql_query("SELECT * FROM olist_order_items_dataset;", sqliteConnection)
 table
 ```
-
+![table](https://github.com/RiyZ411/Pacmannn/blob/main/Wrangling%20dan%20SQL/Project/Pictures/6.png)
 ``` python
 table = pd.read_sql_query("SELECT * FROM olist_products_dataset;", sqliteConnection)
 table
 ```
-
+![table](https://github.com/RiyZ411/Pacmannn/blob/main/Wrangling%20dan%20SQL/Project/Pictures/7.png)
 ``` python
 table = pd.read_sql_query("SELECT * FROM olist_sellers_dataset;", sqliteConnection)
 table
 ```
-
+![table](https://github.com/RiyZ411/Pacmannn/blob/main/Wrangling%20dan%20SQL/Project/Pictures/8.png)
 ``` python
 table = pd.read_sql_query("SELECT * FROM olist_geolocation_dataset;", sqliteConnection)
 table
 ```
-
+![table]()
 ``` python
 table = pd.read_sql_query("SELECT * FROM product_category_name_translation;", sqliteConnection)
 table
 ```
-
+![table](https://github.com/RiyZ411/Pacmannn/blob/main/Wrangling%20dan%20SQL/Project/Pictures/9.png)
 ## **MENENTUKAN OBJEKTIVE**
 Dalam menentukan objektive ini juga dilakukan proses cleaning dan
 visaualisasi untuk setiap objektive. Untuk proses data cleaning pada
@@ -82,7 +82,7 @@ objektive1 = pd.read_sql_query(
     , sqliteConnection)
 objektive1
 ```
-
+![table](https://github.com/RiyZ411/Pacmannn/blob/main/Wrangling%20dan%20SQL/Project/Pictures/10.png)
 #### **b. Data Cleaning** 
 ##### 1. cek dan hapus missing 
 ``` python
@@ -91,22 +91,22 @@ col_names = objektive1.columns
 objektive1[col_names] = objektive1[col_names].replace(missing_values, np.nan)
 objektive1.isna().sum()
 ```
-
+![table](https://github.com/RiyZ411/Pacmannn/blob/main/Wrangling%20dan%20SQL/Project/Pictures/11.png)
 ``` python
 objektive1 = objektive1.dropna()
 objektive1.isna().sum()
 ```
-
+![table](https://github.com/RiyZ411/Pacmannn/blob/main/Wrangling%20dan%20SQL/Project/Pictures/12.png)
 ##### 2. cek duplikasi data
 ``` python
 objektive1.duplicated().sum()
 ```
-
+![table](https://github.com/RiyZ411/Pacmannn/blob/main/Wrangling%20dan%20SQL/Project/Pictures/13.png)
 ##### 3. Cek inkonsisten format atau tipe daya
 ``` python
 objektive1['product_category_name'].unique()
 ```
-
+![table]()
 #### **c. Visualization**
 ``` python
 objektive1.plot.bar(x='product_category_name', color="orange")
