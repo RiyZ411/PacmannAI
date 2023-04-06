@@ -139,7 +139,7 @@ objektive2.duplicated().sum()
 objektive2['product_category_name'].unique()
 ```
 ![table](https://github.com/RiyZ411/Pacmannn/blob/main/Wrangling%20dan%20SQL/Project/Pictures/19.png)
-#### **c. Visualization** {#c-visualization}
+#### **c. Visualization** 
 ``` python
 objektive2.plot.bar(x='product_category_name', color="blue")
 ```
@@ -244,7 +244,7 @@ objektive5.duplicated().sum()
 objektive5['order_status'].unique()
 ```
 ![table](https://github.com/RiyZ411/Pacmannn/blob/main/Wrangling%20dan%20SQL/Project/Pictures/33.png)
-#### **c. Visualization** {#c-visualization}
+#### **c. Visualization** 
 ``` python
 objektive5.plot.bar(x='order_status', color="violet")
 ```
@@ -277,7 +277,7 @@ objektive6.duplicated().sum()
 objektive6['payment_type'].unique()
 ```
 ![table](https://github.com/RiyZ411/Pacmannn/blob/main/Wrangling%20dan%20SQL/Project/Pictures/37.png)
-#### **c. Visualization** {#c-visualization}
+#### **c. Visualization**
 ``` python
 # define Seaborn color palette to use
 palette_color = sns.color_palette('bright')[0:10]
