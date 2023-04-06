@@ -101,12 +101,12 @@ objektive1.isna().sum()
 ``` python
 objektive1.duplicated().sum()
 ```
-![table](https://github.com/RiyZ411/Pacmannn/blob/main/Wrangling%20dan%20SQL/Project/Pictures/13.png)
+![table](https://github.com/RiyZ411/Pacmannn/blob/main/Wrangling%20dan%20SQL/Project/Pictures/14.png)
 ##### 3. Cek inkonsisten format atau tipe daya
 ``` python
 objektive1['product_category_name'].unique()
 ```
-![table](https://github.com/RiyZ411/Pacmannn/blob/main/Wrangling%20dan%20SQL/Project/Pictures/14.png)
+![table](https://github.com/RiyZ411/Pacmannn/blob/main/Wrangling%20dan%20SQL/Project/Pictures/15.png)
 #### **c. Visualization**
 ``` python
 objektive1.plot.bar(x='product_category_name', color="orange")
@@ -119,7 +119,7 @@ objektive2 = pd.read_sql_query(
     , sqliteConnection)
 objektive2
 ```
-![table](https://github.com/RiyZ411/Pacmannn/blob/main/Wrangling%20dan%20SQL/Project/Pictures/15.png)
+![table](https://github.com/RiyZ411/Pacmannn/blob/main/Wrangling%20dan%20SQL/Project/Pictures/16.png)
 #### **b. Data Cleaning**
 ##### 1. cek dan hapus missing
 ``` python
@@ -128,12 +128,12 @@ col_names = objektive2.columns
 objektive2[col_names] = objektive2[col_names].replace(missing_values, np.nan)
 objektive2.isna().sum()
 ```
-![table](https://github.com/RiyZ411/Pacmannn/blob/main/Wrangling%20dan%20SQL/Project/Pictures/16.png)
+![table](https://github.com/RiyZ411/Pacmannn/blob/main/Wrangling%20dan%20SQL/Project/Pictures/17.png)
 ##### 2. cek duplikasi data
 ``` python
 objektive2.duplicated().sum()
 ```
-![table](https://github.com/RiyZ411/Pacmannn/blob/main/Wrangling%20dan%20SQL/Project/Pictures/17.png)
+![table](https://github.com/RiyZ411/Pacmannn/blob/main/Wrangling%20dan%20SQL/Project/Pictures/18.png)
 ##### 3. Cek inkonsisten format atau tipe daya
 ``` python
 objektive2['product_category_name'].unique()
