@@ -69,8 +69,8 @@ table
 ## **MENENTUKAN OBJEKTIVE**
 Dalam menentukan objektive ini juga dilakukan proses cleaning dan
 visaualisasi untuk setiap objektive. Untuk proses data cleaning pada
-data data outlier tidak dilakukan karena seluruh objektive menggunakan
-frekuensi kemunculan dari sebuah data, jika dihilangkan ditakutkan akan
+data data outlier tidak dilakukan karena seluruh objektive menggunakan pengelompokkan bersadarkan masing-masing partisi(menggunakan fungsi group by) untuk mengetahui 
+frekuensi kemunculan dari setiap partisi, jika dihilangkan ditakutkan akan
 mengurangi informasi terkait frekuensi terendah sehingga ditakutkan
 kesalahan dalam mengambil sebuah keputusan
 
