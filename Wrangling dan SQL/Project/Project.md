@@ -138,12 +138,12 @@ objektive2.duplicated().sum()
 ``` python
 objektive2['product_category_name'].unique()
 ```
-
+![table](https://github.com/RiyZ411/Pacmannn/blob/main/Wrangling%20dan%20SQL/Project/Pictures/19.png)
 #### **c. Visualization** {#c-visualization}
 ``` python
 objektive2.plot.bar(x='product_category_name', color="blue")
 ```
-
+![table](https://github.com/RiyZ411/Pacmannn/blob/main/Wrangling%20dan%20SQL/Project/Pictures/Visualization/75fa2a4342a502a5b1c82e62b960d9cc7e7235c2.png)
 ### **3. Perusahaan ingin melihat 20 kota teratas yang memiliki jumlah penjualan tertinggi** 
 ``` python
 objektive3 = pd.read_sql_query(
@@ -151,7 +151,7 @@ objektive3 = pd.read_sql_query(
     , sqliteConnection)
 objektive3
 ```
-
+![table](https://github.com/RiyZ411/Pacmannn/blob/main/Wrangling%20dan%20SQL/Project/Pictures/20.png)
 #### **b. Data Cleaning** 
 ##### 1. cek dan hapus missing
 ``` python
@@ -160,31 +160,26 @@ col_names = objektive3.columns
 objektive3[col_names] = objektive3[col_names].replace(missing_values, np.nan)
 objektive3.isna().sum()
 ```
-
-``` python
-objektive3 = objektive3.dropna()
-objektive3.isna().sum()
-```
-
+![table](https://github.com/RiyZ411/Pacmannn/blob/main/Wrangling%20dan%20SQL/Project/Pictures/21.png)
 ##### 2. cek duplikasi data
 ``` python
 objektive3.duplicated().sum()
 ```
-
+![table](https://github.com/RiyZ411/Pacmannn/blob/main/Wrangling%20dan%20SQL/Project/Pictures/22.png)
 ##### 3. Cek inkonsisten format atau tipe daya
 ``` python
 objektive3['customer_city'].unique()
 ```
-
+![table](https://github.com/RiyZ411/Pacmannn/blob/main/Wrangling%20dan%20SQL/Project/Pictures/23.png)
 ``` python
 objektive3['customer_state'].unique()
 ```
-
+![table](https://github.com/RiyZ411/Pacmannn/blob/main/Wrangling%20dan%20SQL/Project/Pictures/24.png)
 #### **c. Visualization** 
 ``` python
 objektive3.plot.bar(x='customer_city', color="green")
 ```
-
+![table](https://github.com/RiyZ411/Pacmannn/blob/main/Wrangling%20dan%20SQL/Project/Pictures/Visualization/a3527ba04adc75aed5b794f5983e2eac7dcec790.png)
 ### **4. Perusahaan ingin melihat jumlah penjualan terbanyak dari 20 kategori produk teratas di kota sao paulo** 
 ``` python
 objektive4 = pd.read_sql_query(
@@ -192,7 +187,7 @@ objektive4 = pd.read_sql_query(
     , sqliteConnection)
 objektive4
 ```
-
+![table](https://github.com/RiyZ411/Pacmannn/blob/main/Wrangling%20dan%20SQL/Project/Pictures/25.png)
 #### **b. Data Cleaning**
 ##### 1. cek dan hapus missing 
 ``` python
@@ -201,27 +196,27 @@ col_names = objektive4.columns
 objektive4[col_names] = objektive4[col_names].replace(missing_values, np.nan)
 objektive4.isna().sum()
 ```
-
+![table](https://github.com/RiyZ411/Pacmannn/blob/main/Wrangling%20dan%20SQL/Project/Pictures/26.png)
 ``` python
 objektive4 = objektive4.dropna()
 objektive4.isna().sum()
 ```
-
+![table](https://github.com/RiyZ411/Pacmannn/blob/main/Wrangling%20dan%20SQL/Project/Pictures/27.png)
 ##### 2. cek duplikasi data 
 ``` python
 objektive4.duplicated().sum()
 ```
-
+![table](https://github.com/RiyZ411/Pacmannn/blob/main/Wrangling%20dan%20SQL/Project/Pictures/28.png)
 ##### 3. Cek inkonsisten format atau tipe daya
 ``` python
 objektive4['product_category_name'].unique()
 ```
-
+![table](https://github.com/RiyZ411/Pacmannn/blob/main/Wrangling%20dan%20SQL/Project/Pictures/29.png)
 #### **c. Visualization**
 ``` python
 objektive4.plot.bar(x='product_category_name', color="red")
 ```
-
+![table](https://github.com/RiyZ411/Pacmannn/blob/main/Wrangling%20dan%20SQL/Project/Pictures/Visualization/bc857768da9be98d4002571d8d98e8ac5d09364d.png)
 ### **5. Perusahaan ingin melihat jumlah dari setiap status order di kota sao paulo**
 ``` python
 objektive5 = pd.read_sql_query(
@@ -229,7 +224,7 @@ objektive5 = pd.read_sql_query(
     , sqliteConnection)
 objektive5
 ```
-
+![table](https://github.com/RiyZ411/Pacmannn/blob/main/Wrangling%20dan%20SQL/Project/Pictures/30.png)
 #### **b. Data Cleaning**
 ##### 1. cek dan hapus missing 
 ``` python
@@ -238,27 +233,22 @@ col_names = objektive5.columns
 objektive5[col_names] = objektive5[col_names].replace(missing_values, np.nan)
 objektive5.isna().sum()
 ```
-
-``` python
-objektive5 = objektive5.dropna()
-objektive5.isna().sum()
-```
-
+![table](https://github.com/RiyZ411/Pacmannn/blob/main/Wrangling%20dan%20SQL/Project/Pictures/31.png)
 ##### 2. cek duplikasi data 
 ``` python
 objektive5.duplicated().sum()
 ```
-
+![table](https://github.com/RiyZ411/Pacmannn/blob/main/Wrangling%20dan%20SQL/Project/Pictures/32.png)
 ##### 3. Cek inkonsisten format atau tipe daya
 ``` python
 objektive5['order_status'].unique()
 ```
-
+![table](https://github.com/RiyZ411/Pacmannn/blob/main/Wrangling%20dan%20SQL/Project/Pictures/33.png)
 #### **c. Visualization** {#c-visualization}
 ``` python
 objektive5.plot.bar(x='order_status', color="violet")
 ```
-
+![table](https://github.com/RiyZ411/Pacmannn/blob/main/Wrangling%20dan%20SQL/Project/Pictures/Visualization/3dffa527eba38ad3f6f577a8e3d1d06a2400311c.png)
 ### **6. Perusahaan ingin melihat jumlah dari tiap metode pembayaran di kota sao paulo** 
 ``` python
 #perusahaan ingin melihat metode pembayaran yang di lakukan oleh customer di kota sao paulo
@@ -267,7 +257,7 @@ objektive6 = pd.read_sql_query(
     , sqliteConnection)
 objektive6
 ```
-
+![table](https://github.com/RiyZ411/Pacmannn/blob/main/Wrangling%20dan%20SQL/Project/Pictures/34.png)
 #### **b. Data Cleaning** 
 ##### 1. cek dan hapus missing 
 ``` python
@@ -276,22 +266,17 @@ col_names = objektive6.columns
 objektive6[col_names] = objektive6[col_names].replace(missing_values, np.nan)
 objektive6.isna().sum()
 ```
-
-``` python
-objektive6 = objektive6.dropna()
-objektive6.isna().sum()
-```
-
+![table](https://github.com/RiyZ411/Pacmannn/blob/main/Wrangling%20dan%20SQL/Project/Pictures/35.png)
 ##### 2. cek duplikasi data
 ``` python
 objektive6.duplicated().sum()
 ```
-
+![table](https://github.com/RiyZ411/Pacmannn/blob/main/Wrangling%20dan%20SQL/Project/Pictures/36.png)
 ##### 3. Cek inkonsisten format atau tipe daya
 ``` python
 objektive6['payment_type'].unique()
 ```
-
+![table](https://github.com/RiyZ411/Pacmannn/blob/main/Wrangling%20dan%20SQL/Project/Pictures/37.png)
 #### **c. Visualization** {#c-visualization}
 ``` python
 # define Seaborn color palette to use
@@ -303,7 +288,7 @@ plt.pie(objektive6['jumlah'], labels=objektive6['payment_type'], colors=palette_
 # displaying chart
 plt.show()
 ```
-
+![table](https://github.com/RiyZ411/Pacmannn/blob/main/Wrangling%20dan%20SQL/Project/Pictures/Visualization/2e4430885cab24e50edbb44b498698760555c2b1.png)
 ### **7. perusahaan ingin melihat 10 penjual yang menjual barang paling banyak**
 ``` python
 objektive7 = pd.read_sql_query(
@@ -311,7 +296,7 @@ objektive7 = pd.read_sql_query(
     , sqliteConnection)
 objektive7
 ```
-
+![table](https://github.com/RiyZ411/Pacmannn/blob/main/Wrangling%20dan%20SQL/Project/Pictures/38.png)
 #### **b. Data Cleaning** 
 ##### 1. cek dan hapus missing 
 ``` python
@@ -320,28 +305,23 @@ col_names = objektive7.columns
 objektive7[col_names] = objektive7[col_names].replace(missing_values, np.nan)
 objektive7.isna().sum()
 ```
-
-``` python
-objektive7 = objektive7.dropna()
-objektive7.isna().sum()
-```
-
+![table](https://github.com/RiyZ411/Pacmannn/blob/main/Wrangling%20dan%20SQL/Project/Pictures/39.png)
 ##### 2. cek duplikasi data 
 ``` python
 objektive7.duplicated().sum()
 ```
-
+![table](https://github.com/RiyZ411/Pacmannn/blob/main/Wrangling%20dan%20SQL/Project/Pictures/40.png)
 ##### 3. Cek inkonsisten format atau tipe daya
 ``` python
 objektive7['seller_city'].unique()
 ```
-
+![table](https://github.com/RiyZ411/Pacmannn/blob/main/Wrangling%20dan%20SQL/Project/Pictures/41.png)
 ``` python
 objektive7['seller_state'].unique()
 ```
-
+![table](https://github.com/RiyZ411/Pacmannn/blob/main/Wrangling%20dan%20SQL/Project/Pictures/42.png)
 #### **c. Visualization** 
 ``` python
 objektive7.plot.bar(x='seller_id', color="black")
 ```
-
+![table](https://github.com/RiyZ411/Pacmannn/blob/main/Wrangling%20dan%20SQL/Project/Pictures/Visualization/a1aa4310564f62fc4401c8afc7f70f31808596e8.png)
