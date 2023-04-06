@@ -19,7 +19,7 @@ import matplotlib.pyplot as plt
 table = pd.read_sql_query("SELECT name FROM sqlite_master WHERE type='table';", sqliteConnection)
 table
 ```
-
+![table]([https://github.com/RiyZ411/Pacmannn/blob/main/Gambar/super.png](https://github.com/RiyZ411/Pacmannn/blob/main/Wrangling%20dan%20SQL/Project/Pictures/1.png))
 ## **Eksplorasi table**
 ``` python
 table = pd.read_sql_query("SELECT * FROM olist_order_customer_dataset;", sqliteConnection)
