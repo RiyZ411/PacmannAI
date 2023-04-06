@@ -75,7 +75,7 @@ mengurangi informasi terkait frekuensi terendah sehingga ditakutkan
 kesalahan dalam mengambil sebuah keputusan
 
 ### **1. Perusahaan ingin melihat kategori produk yang paling banyak diorder oleh customer** 
-#### **a. Query SQL** {#a-query-sql}
+#### **a. Query SQL** 
 ``` python
 objektive1 = pd.read_sql_query(
     "with orderr as(select product_category_name, count(product_id) as jumlah_order from olist_products_dataset inner join olist_order_items_dataset using(product_id) group by product_category_name) select * from orderr order by jumlah_order desc;"
@@ -83,8 +83,8 @@ objektive1 = pd.read_sql_query(
 objektive1
 ```
 
-#### **b. Data Cleaning** {#b-data-cleaning}
-##### 1. cek dan hapus missing {#1-cek-dan-hapus-missing}
+#### **b. Data Cleaning** 
+##### 1. cek dan hapus missing 
 ``` python
 missing_values = ["", " ", "None", "none"] #definisikan nilai missing yang mungkin terjadi
 col_names = objektive1.columns
@@ -97,12 +97,12 @@ objektive1 = objektive1.dropna()
 objektive1.isna().sum()
 ```
 
-##### 2. cek duplikasi data {#2-cek-duplikasi-data}
+##### 2. cek duplikasi data
 ``` python
 objektive1.duplicated().sum()
 ```
 
-##### 3. Cek inkonsisten format atau tipe daya {#3-cek-inkonsisten-format-atau-tipe-daya}
+##### 3. Cek inkonsisten format atau tipe daya
 ``` python
 objektive1['product_category_name'].unique()
 ```
@@ -139,7 +139,7 @@ objektive2.isna().sum()
 objektive2.duplicated().sum()
 ```
 
-##### 3. Cek inkonsisten format atau tipe daya {#3-cek-inkonsisten-format-atau-tipe-daya}
+##### 3. Cek inkonsisten format atau tipe daya
 ``` python
 objektive2['product_category_name'].unique()
 ```
@@ -227,7 +227,7 @@ objektive4['product_category_name'].unique()
 objektive4.plot.bar(x='product_category_name', color="red")
 ```
 
-### **5. Perusahaan ingin melihat jumlah dari setiap status order di kota sao paulo** {#5-perusahaan-ingin-melihat-jumlah-dari-setiap-status-order-di-kota-sao-paulo}
+### **5. Perusahaan ingin melihat jumlah dari setiap status order di kota sao paulo**
 ``` python
 objektive5 = pd.read_sql_query(
     "with state as(select olist_order_dataset.order_status, customer_city from olist_order_customer_dataset inner join olist_order_dataset using(customer_id)) select order_status, count(customer_city) as jumlah from state where customer_city = 'sao paulo' group by order_status order by jumlah desc;"
@@ -254,7 +254,7 @@ objektive5.isna().sum()
 objektive5.duplicated().sum()
 ```
 
-##### 3. Cek inkonsisten format atau tipe daya {#3-cek-inkonsisten-format-atau-tipe-daya}
+##### 3. Cek inkonsisten format atau tipe daya
 ``` python
 objektive5['order_status'].unique()
 ```
