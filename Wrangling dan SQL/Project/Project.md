@@ -60,12 +60,12 @@ table
 table = pd.read_sql_query("SELECT * FROM olist_geolocation_dataset;", sqliteConnection)
 table
 ```
-![table]()
+![table](https://github.com/RiyZ411/Pacmannn/blob/main/Wrangling%20dan%20SQL/Project/Pictures/9.png)
 ``` python
 table = pd.read_sql_query("SELECT * FROM product_category_name_translation;", sqliteConnection)
 table
 ```
-![table](https://github.com/RiyZ411/Pacmannn/blob/main/Wrangling%20dan%20SQL/Project/Pictures/9.png)
+![table](https://github.com/RiyZ411/Pacmannn/blob/main/Wrangling%20dan%20SQL/Project/Pictures/10.png)
 ## **MENENTUKAN OBJEKTIVE**
 Dalam menentukan objektive ini juga dilakukan proses cleaning dan
 visaualisasi untuk setiap objektive. Untuk proses data cleaning pada
@@ -82,7 +82,7 @@ objektive1 = pd.read_sql_query(
     , sqliteConnection)
 objektive1
 ```
-![table](https://github.com/RiyZ411/Pacmannn/blob/main/Wrangling%20dan%20SQL/Project/Pictures/10.png)
+![table](https://github.com/RiyZ411/Pacmannn/blob/main/Wrangling%20dan%20SQL/Project/Pictures/11.png)
 #### **b. Data Cleaning** 
 ##### 1. cek dan hapus missing 
 ``` python
@@ -91,12 +91,12 @@ col_names = objektive1.columns
 objektive1[col_names] = objektive1[col_names].replace(missing_values, np.nan)
 objektive1.isna().sum()
 ```
-![table](https://github.com/RiyZ411/Pacmannn/blob/main/Wrangling%20dan%20SQL/Project/Pictures/11.png)
+![table](https://github.com/RiyZ411/Pacmannn/blob/main/Wrangling%20dan%20SQL/Project/Pictures/12.png)
 ``` python
 objektive1 = objektive1.dropna()
 objektive1.isna().sum()
 ```
-![table](https://github.com/RiyZ411/Pacmannn/blob/main/Wrangling%20dan%20SQL/Project/Pictures/12.png)
+![table](https://github.com/RiyZ411/Pacmannn/blob/main/Wrangling%20dan%20SQL/Project/Pictures/13.png)
 ##### 2. cek duplikasi data
 ``` python
 objektive1.duplicated().sum()
@@ -106,12 +106,12 @@ objektive1.duplicated().sum()
 ``` python
 objektive1['product_category_name'].unique()
 ```
-![table]()
+![table](https://github.com/RiyZ411/Pacmannn/blob/main/Wrangling%20dan%20SQL/Project/Pictures/14.png)
 #### **c. Visualization**
 ``` python
 objektive1.plot.bar(x='product_category_name', color="orange")
 ```
-
+![table](https://github.com/RiyZ411/Pacmannn/blob/main/Wrangling%20dan%20SQL/Project/Pictures/Visualization/93e0be75b6aa06bc124e65d1c66f76ee22be8545.png)
 ### **2. Perusahaan ingin melihat 15 kategori produk yang memiliki omzet paling tinggi**
 ``` python
 objektive2 = pd.read_sql_query(
@@ -119,7 +119,7 @@ objektive2 = pd.read_sql_query(
     , sqliteConnection)
 objektive2
 ```
-
+![table](https://github.com/RiyZ411/Pacmannn/blob/main/Wrangling%20dan%20SQL/Project/Pictures/15.png)
 #### **b. Data Cleaning**
 ##### 1. cek dan hapus missing
 ``` python
@@ -128,17 +128,12 @@ col_names = objektive2.columns
 objektive2[col_names] = objektive2[col_names].replace(missing_values, np.nan)
 objektive2.isna().sum()
 ```
-
-``` python
-objektive2 = objektive2.dropna()
-objektive2.isna().sum()
-```
-
+![table](https://github.com/RiyZ411/Pacmannn/blob/main/Wrangling%20dan%20SQL/Project/Pictures/16.png)
 ##### 2. cek duplikasi data
 ``` python
 objektive2.duplicated().sum()
 ```
-
+![table](https://github.com/RiyZ411/Pacmannn/blob/main/Wrangling%20dan%20SQL/Project/Pictures/17.png)
 ##### 3. Cek inkonsisten format atau tipe daya
 ``` python
 objektive2['product_category_name'].unique()
