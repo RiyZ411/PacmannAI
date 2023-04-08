@@ -332,7 +332,7 @@ objektive8 = pd.read_sql_query(
     , sqliteConnection)
 objektive8
 ```
-![table](https://github.com/RiyZ411/Pacmannn/blob/main/Wrangling%20dan%20SQL/Project/Pictures/38.png)
+![table](https://github.com/RiyZ411/Pacmannn/blob/main/Wrangling%20dan%20SQL/Project/Pictures/43.png)
 #### **b. Data Cleaning** 
 ##### 1. cek dan hapus missing 
 ``` python
@@ -341,23 +341,23 @@ col_names = objektive8.columns
 objektive8[col_names] = objektive8[col_names].replace(missing_values, np.nan)
 objektive8.isna().sum()
 ```
-![table](https://github.com/RiyZ411/Pacmannn/blob/main/Wrangling%20dan%20SQL/Project/Pictures/39.png)
+![table](https://github.com/RiyZ411/Pacmannn/blob/main/Wrangling%20dan%20SQL/Project/Pictures/44.png)
 ##### 2. cek duplikasi data 
 ``` python
 objektive7.duplicated().sum()
 ```
-![table](https://github.com/RiyZ411/Pacmannn/blob/main/Wrangling%20dan%20SQL/Project/Pictures/40.png)
+![table](https://github.com/RiyZ411/Pacmannn/blob/main/Wrangling%20dan%20SQL/Project/Pictures/45.png)
 ##### 3. Cek inkonsisten format atau tipe daya
 ``` python
 objektive8['seller_city'].unique()
 ```
-![table](https://github.com/RiyZ411/Pacmannn/blob/main/Wrangling%20dan%20SQL/Project/Pictures/41.png)
+![table](https://github.com/RiyZ411/Pacmannn/blob/main/Wrangling%20dan%20SQL/Project/Pictures/46.png)
 ``` python
 objektive8['seller_state'].unique()
 ```
-![table](https://github.com/RiyZ411/Pacmannn/blob/main/Wrangling%20dan%20SQL/Project/Pictures/42.png)
+![table](https://github.com/RiyZ411/Pacmannn/blob/main/Wrangling%20dan%20SQL/Project/Pictures/47.png)
 #### **c. Visualization** 
 ``` python
 objektive8.plot.bar(x='seller_id', color="black")
 ```
-![table](https://github.com/RiyZ411/Pacmannn/blob/main/Wrangling%20dan%20SQL/Project/Pictures/Visualization/a1aa4310564f62fc4401c8afc7f70f31808596e8.png)
+![table](https://github.com/RiyZ411/Pacmannn/blob/main/Wrangling%20dan%20SQL/Project/Pictures/Visualization/Cuplikan%20layar%202023-04-07%20233306.png)
