@@ -325,3 +325,39 @@ objektive7['seller_state'].unique()
 objektive7.plot.bar(x='seller_id', color="black")
 ```
 ![table](https://github.com/RiyZ411/Pacmannn/blob/main/Wrangling%20dan%20SQL/Project/Pictures/Visualization/a1aa4310564f62fc4401c8afc7f70f31808596e8.png)
+### **8. Perusahaan ingin melihat 10 kota dengan jumlah penjual terbanyak**
+``` python
+objektive8 = pd.read_sql_query(
+    "with seller_city as(select seller_city, seller_state, count(seller_id) as banyak_penjual from olist_sellers_dataset inner join olist_order_items_dataset using(seller_id) group by seller_city) select * from seller_city order by banyak_penjual desc limit 10;"
+    , sqliteConnection)
+objektive8
+```
+![table](https://github.com/RiyZ411/Pacmannn/blob/main/Wrangling%20dan%20SQL/Project/Pictures/38.png)
+#### **b. Data Cleaning** 
+##### 1. cek dan hapus missing 
+``` python
+missing_values = ["", " ", "None", "none"] #definisikan nilai missing yang mungkin terjadi
+col_names = objektive8.columns
+objektive8[col_names] = objektive8[col_names].replace(missing_values, np.nan)
+objektive8.isna().sum()
+```
+![table](https://github.com/RiyZ411/Pacmannn/blob/main/Wrangling%20dan%20SQL/Project/Pictures/39.png)
+##### 2. cek duplikasi data 
+``` python
+objektive7.duplicated().sum()
+```
+![table](https://github.com/RiyZ411/Pacmannn/blob/main/Wrangling%20dan%20SQL/Project/Pictures/40.png)
+##### 3. Cek inkonsisten format atau tipe daya
+``` python
+objektive8['seller_city'].unique()
+```
+![table](https://github.com/RiyZ411/Pacmannn/blob/main/Wrangling%20dan%20SQL/Project/Pictures/41.png)
+``` python
+objektive8['seller_state'].unique()
+```
+![table](https://github.com/RiyZ411/Pacmannn/blob/main/Wrangling%20dan%20SQL/Project/Pictures/42.png)
+#### **c. Visualization** 
+``` python
+objektive8.plot.bar(x='seller_id', color="black")
+```
+![table](https://github.com/RiyZ411/Pacmannn/blob/main/Wrangling%20dan%20SQL/Project/Pictures/Visualization/a1aa4310564f62fc4401c8afc7f70f31808596e8.png)
