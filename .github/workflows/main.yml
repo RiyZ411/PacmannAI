@@ -38,7 +38,7 @@ jobs:
           password: ${{ secrets.DOCKERHUB_SECRET }}
 
       - name: Build Docker image
-        run: docker build -t aliarham018/pacmann_mlprocess_api .
+        run: docker build -t ipincogan/pacmann_mlprocess_api .
 
       - name: Push Docker image to Docker Hub
-        run: docker push aliarham018/pacmann_mlprocess_api
+        run: docker push ipincogan/pacmann_mlprocess_api
