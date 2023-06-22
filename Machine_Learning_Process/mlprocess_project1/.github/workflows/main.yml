@@ -24,8 +24,7 @@ jobs:
         run: echo $PYTHONPATH
 
       - name: Install dependencies
-        working-directory: mlprocess_project1
-        run: |
+        run: 
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
