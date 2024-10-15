@@ -1,4 +1,5 @@
 # **Project Wrangling dan SQL**
+Project ini merupakan project akhir untuk kelas Wrangling & SQL dari program bootcamp AI/Machine Learning oleh Pacmann Academy. Project ini menggunakan file database yang mana isinya mengenai data penjualan ritel pada region-region di negara brazil. Digunakan library sqlite3 agar file database tersebut bisa terbaca oleh bahasa pemrograman python. Selain itu, digunakan juga library matplotlip & seaborn untuk menampilkan hasil visualisasi data.
 - Nama    : Riyan Zaenal Arifin
 - Email   : riyanzaenal411@gmail.com
 
